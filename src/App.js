@@ -1,5 +1,7 @@
 import React from 'react';
-import { Redirect } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import DashboardView from './components/DashboardView';
+import LoginView from './components/LoginView';
 import './styles/App.css';
 
 class App extends React.Component {
@@ -9,14 +11,13 @@ class App extends React.Component {
   };
 
   render() {
-    // Redirect to login screen if user is not in logged-in state
-    if(!this.state.isLoggedIn) {
-      return <Redirect to="/Login"/>
-    } 
-
     return(
-      
-      <div id="mainLayout" className="App"></div>
+      <Router>
+        <Routes>
+          <Route exact path="/" element={ <DashboardView /> } />
+          <Route exact path="/LoginView" element={ <LoginView /> } />
+        </Routes>
+      </Router>
     );
   }
 

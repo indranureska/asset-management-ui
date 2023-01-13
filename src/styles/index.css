@@ -11,3 +11,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "OpenSans-Regular";
+  src:local("OpenSans-Regular"),
+  url("../fonts/OpenSans/OpenSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "OpenSans-Bold";
+  src:local("OpenSans-Bold"),
+  url("../fonts/OpenSans/OpenSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "OpenSans-SemiBold";
+  src:local("OpenSans-SemiBold"),
+  url("../fonts/OpenSans/OpenSans-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "OpenSans-Medium";
+  src:local("OpenSans-Medium"),
+  url("../fonts/OpenSans/OpenSans-Medium.ttf") format("truetype");
+}

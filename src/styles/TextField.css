@@ -1,0 +1,11 @@
+.MuiOutlinedInput-root {
+    border-radius: 0 !important;
+}
+
+.MuiInputBase-input {
+    font-family: 'OpenSans-Regular';
+}
+
+.MuiInputBase-inputSizeSmall {
+    font-size: 12px;
+}

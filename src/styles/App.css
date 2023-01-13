@@ -1,8 +1,12 @@
-.App {
+.app {
   width: 100%;
   height: 100vh;
-  text-align: center;
-  background-color: #101728;
+  /* background-color: #101728; */
+}
+
+.app-name {
+  font-family: 'OpenSans-Bold';
+  font-size: 48px;
 }
 
 .App-logo {
@@ -38,4 +42,28 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.login-main-layout {
+  display: flex;
+  flex-direction: row;
+}
+
+.login-sub-layout {
+  padding-top: 30px;
+  padding-left: 50px;
+}
+
+.login-form {
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.login-fields {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-image {
+  width: 100%;
 }
