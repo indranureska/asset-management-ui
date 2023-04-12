@@ -3,3 +3,7 @@
     font-family: 'OpenSans-Bold' !important;
     text-transform: none !important;
 }
+
+.login-button {
+    min-width: 120px !important;
+}

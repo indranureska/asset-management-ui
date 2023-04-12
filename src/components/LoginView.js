@@ -1,11 +1,11 @@
-import React from 'react';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import { Stack } from '@mui/system';
-
+import React from 'react';
 import '../styles/App.css';
 import '../styles/Button.css';
 import '../styles/TextField.css';
+
 
 class LoginView extends React.Component {
   
@@ -13,23 +13,26 @@ class LoginView extends React.Component {
     return(
       <div id="mainLayout" className="app login-main-layout">
           <div id="leftSide" className="login-sub-layout">
-            <Stack spacing={10} width="100%">
-              <div id="logo">[Put Logo Here]</div>  
-              <div id="appName" className="app-name">Asset Management</div>
-              <div id="loginForm" className="login-form">
-                <form>
-                  <div className="login-fields">
-                    <Stack spacing={2}>
-                      <TextField id="emailAddress" label="Email Address" variant="outlined" size="small"/>
-                      <TextField id="password" label="Password" variant="outlined" size="small"/>
-                      <Button variant="contained" size="small">Login</Button>
+            <div id="logo">[TODO: Put Logo Here]</div>
+            <div id="appNameAndLoginForm" className="app-name-login-form">
+              <div>  
+                <div id="appName" className="app-name">Asset<br/>Management</div>
+                <div id="loginForm" className="login-form">
+                  <form>
+                    <Stack spacing={3}>
+                      <TextField id="emailAddress" label="Email Address" variant="outlined" size="normal"/>
+                      <TextField id="password" label="Password" variant="outlined" size="normal" 
+                              type="password" autoComplete="current-password"/>
+                      <div className="login-btn-div">
+                        <Button variant="contained" className="login-button">Login</Button>
+                       </div>
                     </Stack>
-                  </div>
-                </form>
+                  </form>
+                </div>
               </div>
-            </Stack>
+            </div>
           </div>
-          <div id="rightSide" className="login-sub-layout"><div id="loginImage" className="login-image">[Put Login Image Here]</div></div>
+          <div id="rightSide" className="login-sub-layout"><div id="loginImage" className="login-image">[TODO: Put Login Image Here]</div></div>
       </div>
     );
   }

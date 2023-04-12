@@ -3,9 +3,22 @@
 }
 
 .MuiInputBase-input {
-    font-family: 'OpenSans-Regular';
+    font-family: 'OpenSans-SemiBold' !important;
+    background-color: #1F41BB !important;
+    color: #FFFFFF !important;
 }
 
 .MuiInputBase-inputSizeSmall {
-    font-size: 12px;
+    font-size: 13px !important;
+}
+
+.MuiInputLabel-sizeSmall {
+    font-family: 'OpenSans-SemiBold' !important;
+    font-size: 13px !important;
+    color: #FFFFFF !important;
+}
+
+.MuiInputLabel-root {
+    font-family: 'OpenSans-SemiBold' !important;
+    color: #FFFFFF !important;
 }
